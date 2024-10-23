@@ -21,3 +21,19 @@ services:
     command: sh -c "npm install && npm start"
     ports:
       - '3000:3000'
+
+    mongodb:
+      build:
+        context: ./db
+        dockerfile: Dockerfile
+      image: mongodb/mongodb-community-server:6.0-ubi8
+      volumes:
+        - type: bind
+          source: ./data
+          target: /data/db
+      networks:
+        - mongoDbTp
+
+networks:
+  mongoDbTp:
+    driver: bridge
