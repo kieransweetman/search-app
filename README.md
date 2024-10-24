@@ -6,7 +6,8 @@
 - [] connect backend with mongodb
     - [] add dependencies to backend `Dockerfile`? i.e. `mongosh` & other related system wide deps we want
 - create schema for endpoints
-- [] design and make frontend architecture to consume backend endpoints
+- [x] design and make frontend architecture to consume backend endpoints
+- [x] express route
 
 ## Goals
 - [x] search dropdown box with auto-suggest 
