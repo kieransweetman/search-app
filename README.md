@@ -2,15 +2,15 @@
 
 ## setup
 
-- setup mongodb
-- connect backend with mongodb
-    - add dependencies to backend `Dockerfile`? i.e. `mongosh` & other related system wide deps we want
+- [] setup mongodb
+- [] connect backend with mongodb
+    - [] add dependencies to backend `Dockerfile`? i.e. `mongosh` & other related system wide deps we want
 - create schema for endpoints
-- design and make frontend architecture to consume backend endpoints
+- [] design and make frontend architecture to consume backend endpoints
 
 ## Goals
-- search dropdown box with auto-suggest
-- store all requests to `https://swapi.dev/api/starships` in a `search-requests` collection
+- [x] search dropdown box with auto-suggest 
+- [] store all requests to `https://swapi.dev/api/starships` in a `search-requests` collection
 
 ---
 
@@ -35,6 +35,7 @@ https://swapi.dev/api/starships/?format=json
 
 Additional Task (Optional):
 All requests to external REST API must be stored into MongoDB collection ‘search-requests’.
+
 # Resources
 - https://www.blacksbricks.de/images/product_images/original_images/stardestrrevsl1.jpg
 - https://64.media.tumblr.com/cdd22d181a0ec1c9a0788bb44e38c5fe/tumblr_ohcuovgfma1ujrjg9o1_1280.jpg
