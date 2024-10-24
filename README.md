@@ -1,11 +1,37 @@
-# TODO
+# Project
+
+## Structure
+
+```md
+|-- README.md
+|-- backend
+|   |-- Dockerfile
+|   |-- db
+|   |-- index.js
+|   |-- models
+|   |-- routes
+|   `-- utils
+|-- compose.yml
+|-- frontend
+|   |-- Dockerfile
+|   |-- README.md
+|   |-- index.html
+|   |-- postcss.config.js
+|   |-- public
+|   |-- src
+|   |-- tailwind.config.js
+|   |-- utils
+|   `-- vite.config.js
+`-- mongoDB
+    |-- README.md
+    `-- data
+```
 
 ## setup
 
 - [x] setup mongodb
 - [x] connect backend with mongodb
-    - [x] add dependencies to backend `Dockerfile`? i.e. `mongosh` & other related system wide deps we want
-- create schema for endpoints
+- [x] create schema for endpoints
 - [x] design and make frontend architecture to consume backend endpoints
 - [x] express route
 
@@ -18,8 +44,7 @@
 # Requirements
 
 ## Technology stack
-MongoDB, Node.js/Spring Boot, ExpressJS/Spring Rest, LitElement or React, TailwindCSS 3.0 or
-Bootstrap 5
+MongoDB, Node.js, ExpressJS, React, TailwindCSS 3.0 
 
 ## Task Description
 In this task, a simple search application needs to be implemented as a single page with a text
