@@ -11,6 +11,8 @@ services:
     ports:
       - '5173:5173'
     tty: true
+    networks:
+      - search_app
 
   backend:
     container_name: backend
@@ -21,6 +23,8 @@ services:
     command: sh -c "npm install && npm start"
     ports:
       - '3000:3000'
+    networks:
+      - search_app
 
   db:
     container_name: db
@@ -30,6 +34,8 @@ services:
       - MONGO_INITDB_ROOT_PASSWORD=pass
     volumes:
       - ./mongodb/data:/data/db
+    ports:
+      - '27017:27017'
     networks:
       - search_app
 

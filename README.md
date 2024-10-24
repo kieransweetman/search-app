@@ -2,16 +2,16 @@
 
 ## setup
 
-- [] setup mongodb
-- [] connect backend with mongodb
-    - [] add dependencies to backend `Dockerfile`? i.e. `mongosh` & other related system wide deps we want
+- [x] setup mongodb
+- [x] connect backend with mongodb
+    - [x] add dependencies to backend `Dockerfile`? i.e. `mongosh` & other related system wide deps we want
 - create schema for endpoints
 - [x] design and make frontend architecture to consume backend endpoints
 - [x] express route
 
 ## Goals
 - [x] search dropdown box with auto-suggest 
-- [] store all requests to `https://swapi.dev/api/starships` in a `search-requests` collection
+- [x] store all requests to `https://swapi.dev/api/starships` in a `search-requests` collection
 
 ---
 

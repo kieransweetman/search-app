@@ -16,9 +16,13 @@ export default function SearchInput({ handleSearch }) {
                 id="search-input"
                 name="search-input"
                 type="text"
+                onChange={(e) => {
+                    if (e.target.value === '') {
+                        handleSearch(null);
+                    }
+                }}
                 placeholder="Search..."
                 className="w-full px-4 py-2 rounded-lg border border-gray-300 shadow-sm focus:outline-none focus:ring-2 focus:ring-indigo-500 bg-white text-gray-800"
-                required
             />
             <button type="submit"
                 className="bg-black text-white px-4 py-2 rounded-lg hover:bg-gray-800 transition duration-300">
@@ -31,5 +35,4 @@ export default function SearchInput({ handleSearch }) {
 
 SearchInput.propTypes = {
     handleSearch: propTypes.func.isRequired,
-
 }

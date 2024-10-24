@@ -32,6 +32,8 @@ function App() {
         .catch((error) => {
           console.error('Error fetching search results:', error);
         });
+    } else {
+      setSearchResults(null);
     }
   }, [searchString]);
 
