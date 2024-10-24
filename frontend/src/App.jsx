@@ -3,15 +3,9 @@ import { useEffect, useState } from "react";
 import SearchInput from '../src/components/search-input';
 import SearchResultItem from '../src/components/search-result-item';
 import apiHelper from '../src/helpers/api-helper';
-const randomIcon = () => {
-  const icons = ['empire_logo.png', 'rebel_logo.png'];
-  return icons[Math.floor(Math.random() * icons.length)];
-}
 
-const randomImage = () => {
-  const images = ['corvette.jpg', 'Star Destroyer 1.jpg'];
-  return images[Math.floor(Math.random() * images.length)];
-}
+import { randomIcon, randomImage } from "./helpers/random";
+
 
 function App() {
   const [searchString, setSearchString] = useState(null);

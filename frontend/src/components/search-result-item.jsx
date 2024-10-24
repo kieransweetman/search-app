@@ -1,4 +1,4 @@
-import PropTypes from 'prop-types';
+import propTypes from 'prop-types';
 
 export default function SearchResultItem({ starship, img, icon }) {
 
@@ -29,7 +29,7 @@ export default function SearchResultItem({ starship, img, icon }) {
 
 
 SearchResultItem.propTypes = {
-    starship: PropTypes.object.isRequired,
-    img: PropTypes.string.isRequired,
-    icon: PropTypes.string.isRequired,
+    starship: propTypes.object.isRequired,
+    img: propTypes.string.isRequired,
+    icon: propTypes.string.isRequired,
 }
